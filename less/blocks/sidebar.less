@@ -1,0 +1,35 @@
+#sidebar-toggle:checked ~ .sidebar-wrapper .sidebar {
+  transform: translateX(100%);
+}
+
+.toggle-sidebar {
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+  svg {
+    fill: @color-charade;
+  }
+}
+
+.sidebar-wrapper {
+  position: fixed;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.sidebar {
+  display: block;
+  position: relative;
+  background-color: @background-sidebar;
+  padding-right: 30px;
+  width: 100%;
+  height: 100%;
+  transform: translateX(0);
+  transition: transform .35s ease-in;
+}

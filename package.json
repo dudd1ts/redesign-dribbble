@@ -1,0 +1,29 @@
+{
+  "name": "dribbble-redesign",
+  "version": "1.0.0",
+  "description": "Dribbble redesign",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "Sergey Kondrashev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.2",
+    "browser-sync": "^2.14.0",
+    "css-mqpacker": "^7.0.0",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-cleancss": "^0.2.2",
+    "gulp-less": "^4.0.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}

@@ -1,0 +1,76 @@
+.navigation {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px;
+  background-color: @background-navigation;
+  @media (min-width: @screen-sm) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.site-logo {
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  align-self: center;
+}
+
+.main-nav {
+  display: flex;
+  padding: 5px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-nav__item {
+  display: flex;
+  width: 40px;
+  margin-right: 5px;
+  border-radius: 4px;
+  font-size: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  svg {
+    margin: auto;
+    fill: @color-white;
+    opacity: .25;
+  }
+
+  &:focus {
+    background-color: rgba(@color-white, .1);
+  }
+
+  &:hover,
+  &--active {
+    background-color: rgba(@color-white, .2);
+  }
+
+  &:hover,
+  &:focus,
+  &--active {
+    svg {
+      opacity: 1;
+    }
+  }
+}
+
+.more {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  svg {
+    margin: auto;
+    transform: rotate(90deg);
+    fill: @color-white;
+    opacity: .25;
+  }
+}
