@@ -19,7 +19,7 @@
     <link rel="manifest" href="/favicons/site.webmanifest">
     <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#c32361">
     <meta name="msapplication-TileColor" content="#c32361">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#242730">
   </head>
 
   <body class="page">
@@ -102,75 +102,244 @@
       </button>
     </aside>
 
-    <section class="page-content">
-
-        <!--
-          // TODO
-          <label class="toggle-sidebar" for="sidebar-toggle" arila-label="Open sidebar" tabindex="0">
+    <div class="sidebar-wrapper">
+      <aside class="sidebar">
+        <label class="toggle-sidebar sidebar__close" for="sidebar-toggle" role="button" arila-label="Open sidebar" tabindex="0">
           <svg class="hamburger-icon" width="25" height="25">
             <use xlink:href="#hamburger"></use>
           </svg>
-        </label> -->
-        <div class="search"  role="search">
-          <input class="search-input" type="text" placeholder="Search for shots and designers">
-        </div>
-        <h1 class="page-title">Last activity</h1>
-        <div class="shots">
-          <article class="shot">
-            <div class="shot__content-wrapper">
-              <a class="shot__content" href="#" rel="bookmark">
-                <picture>
-                  <source srcset="/img/shots/spicy_boys.jpg" media="(min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
-                  <source srcset="/img/shots/spicy_boys_1x.jpg">
-                  <img src="/img/shots/spicy_boys_1x.jpg" alt="Spicy Boys">
-                </picture>
-                <span class="shot__overlay">
-                  <strong class="shot__title">Spicy Boys</strong>
-                  <span class="shot__description">But I must explain to you how all this mistaken idea of denouncing</span>
-
-                  <time class="shot__date" datetime="2019-01-25">January 25, 2019</time>
-                </span>
-                </a>
-            </div>
-            <div class="shot__user">
-              <a class="shot__user-link" href="">
-                <img class="shot__avatar" src="/img/avatars/keith-david-young.jpg" alt="Keith Davis Young avatar">
-                <span class="shot__username">Keith Davis Young</span>
-              </a>
-            </div>
-            <div class="shot__info">
-              <a class="shot__info-item" href="#" aria-label="Shot likes">
-                <svg class="heart-icon" width="12" height="12" aria-hidden="true">
-                    <use xlink:href="#heart"></use>
-                </svg>
-                10
-              </a>
-              <a class="shot__info-item" href="#" aria-label="Shot views">
-                <svg class="eye-icon" width="12" height="12" aria-hidden="true">
-                    <use xlink:href="#eye"></use>
-                </svg>
-                100
-              </a>
-              <a class="shot__info-item" href="#" aria-label="Shot comments">
-                <svg class="chat-icon" width="12" height="12" aria-hidden="true">
-                    <use xlink:href="#chat"></use>
-                </svg>
-                10
-              </a>
-            </div>
-          </article>
-        </div>
-    </section>
-
-    <div class="sidebar-wrapper">
-      <aside class="sidebar">
-          <label class="toggle-sidebar" for="sidebar-toggle" arila-label="Open sidebar" tabindex="0">
-            <svg class="hamburger-icon" width="25" height="25">
-              <use xlink:href="#hamburger"></use>
-            </svg>
-          </label>
+        </label>
       </aside>
     </div>
+
+    <section class="page-content">
+      <div class="controls">
+        <input class="search-input" type="text" placeholder="Search for shots and designers">
+        <label class="toggle-sidebar" for="sidebar-toggle" arila-label="Open sidebar" tabindex="0">
+          <svg class="hamburger-icon" width="25" height="25">
+            <use xlink:href="#hamburger"></use>
+          </svg>
+        </label>
+      </div>
+      <h1 class="page-title">Last activity</h1>
+      <div class="shots">
+        <article class="shot">
+          <div class="shot__content-wrapper">
+            <a class="shot__content" href="#" rel="bookmark">
+              <picture>
+                <source srcset="/img/shots/spicy_boys.jpg" media="(min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+                <source srcset="/img/shots/spicy_boys_1x.jpg">
+                <img src="/img/shots/spicy_boys_1x.jpg" alt="Spicy Boys">
+              </picture>
+              <span class="shot__overlay">
+                <strong class="shot__title">Spicy Boys</strong>
+                <span class="shot__description">But I must explain to you how all this mistaken idea of denouncing</span>
+
+                <time class="shot__date" datetime="2019-01-25">January 25, 2019</time>
+              </span>
+              </a>
+          </div>
+          <div class="shot__user">
+            <a class="shot__user-link" href="">
+              <img class="shot__avatar" src="/img/avatars/keith-david-young.jpg" alt="Keith Davis Young avatar">
+              <span class="shot__username">Keith Davis Young</span>
+            </a>
+          </div>
+          <div class="shot__info">
+            <a class="shot__info-item" href="#" aria-label="Shot likes">
+              <svg class="heart-icon" width="12" height="12" aria-hidden="true">
+                  <use xlink:href="#heart"></use>
+              </svg>
+              10
+            </a>
+            <a class="shot__info-item" href="#" aria-label="Shot views">
+              <svg class="eye-icon" width="12" height="12" aria-hidden="true">
+                  <use xlink:href="#eye"></use>
+              </svg>
+              100
+            </a>
+            <a class="shot__info-item" href="#" aria-label="Shot comments">
+              <svg class="chat-icon" width="12" height="12" aria-hidden="true">
+                  <use xlink:href="#chat"></use>
+              </svg>
+              10
+            </a>
+          </div>
+        </article>
+        <article class="shot">
+          <div class="shot__content-wrapper">
+            <a class="shot__content" href="#" rel="bookmark">
+              <picture>
+                <source srcset="/img/shots/spicy_boys.jpg" media="(min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+                <source srcset="/img/shots/spicy_boys_1x.jpg">
+                <img src="/img/shots/spicy_boys_1x.jpg" alt="Spicy Boys">
+              </picture>
+              <span class="shot__overlay">
+                <strong class="shot__title">Spicy Boys</strong>
+                <span class="shot__description">But I must explain to you how all this mistaken idea of denouncing</span>
+        
+                <time class="shot__date" datetime="2019-01-25">January 25, 2019</time>
+              </span>
+            </a>
+          </div>
+          <div class="shot__user">
+            <a class="shot__user-link" href="">
+              <img class="shot__avatar" src="/img/avatars/keith-david-young.jpg" alt="Keith Davis Young avatar">
+              <span class="shot__username">Keith Davis Young</span>
+            </a>
+          </div>
+          <div class="shot__info">
+            <a class="shot__info-item" href="#" aria-label="Shot likes">
+              <svg class="heart-icon" width="12" height="12" aria-hidden="true">
+                <use xlink:href="#heart"></use>
+              </svg>
+              10
+            </a>
+            <a class="shot__info-item" href="#" aria-label="Shot views">
+              <svg class="eye-icon" width="12" height="12" aria-hidden="true">
+                <use xlink:href="#eye"></use>
+              </svg>
+              100
+            </a>
+            <a class="shot__info-item" href="#" aria-label="Shot comments">
+              <svg class="chat-icon" width="12" height="12" aria-hidden="true">
+                <use xlink:href="#chat"></use>
+              </svg>
+              10
+            </a>
+          </div>
+        </article>
+        <article class="shot">
+          <div class="shot__content-wrapper">
+            <a class="shot__content" href="#" rel="bookmark">
+              <picture>
+                <source srcset="/img/shots/spicy_boys.jpg" media="(min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+                <source srcset="/img/shots/spicy_boys_1x.jpg">
+                <img src="/img/shots/spicy_boys_1x.jpg" alt="Spicy Boys">
+              </picture>
+              <span class="shot__overlay">
+                <strong class="shot__title">Spicy Boys</strong>
+                <span class="shot__description">But I must explain to you how all this mistaken idea of denouncing</span>
+
+                <time class="shot__date" datetime="2019-01-25">January 25, 2019</time>
+              </span>
+            </a>
+          </div>
+          <div class="shot__user">
+            <a class="shot__user-link" href="">
+              <img class="shot__avatar" src="/img/avatars/keith-david-young.jpg" alt="Keith Davis Young avatar">
+              <span class="shot__username">Keith Davis Young</span>
+            </a>
+          </div>
+          <div class="shot__info">
+            <a class="shot__info-item" href="#" aria-label="Shot likes">
+              <svg class="heart-icon" width="12" height="12" aria-hidden="true">
+                <use xlink:href="#heart"></use>
+              </svg>
+              10
+            </a>
+            <a class="shot__info-item" href="#" aria-label="Shot views">
+              <svg class="eye-icon" width="12" height="12" aria-hidden="true">
+                <use xlink:href="#eye"></use>
+              </svg>
+              100
+            </a>
+            <a class="shot__info-item" href="#" aria-label="Shot comments">
+              <svg class="chat-icon" width="12" height="12" aria-hidden="true">
+                <use xlink:href="#chat"></use>
+              </svg>
+              10
+            </a>
+          </div>
+        </article>
+        <article class="shot">
+          <div class="shot__content-wrapper">
+            <a class="shot__content" href="#" rel="bookmark">
+              <picture>
+                <source srcset="/img/shots/spicy_boys.jpg" media="(min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+                <source srcset="/img/shots/spicy_boys_1x.jpg">
+                <img src="/img/shots/spicy_boys_1x.jpg" alt="Spicy Boys">
+              </picture>
+              <span class="shot__overlay">
+                <strong class="shot__title">Spicy Boys</strong>
+                <span class="shot__description">But I must explain to you how all this mistaken idea of denouncing</span>
+
+                <time class="shot__date" datetime="2019-01-25">January 25, 2019</time>
+              </span>
+            </a>
+          </div>
+          <div class="shot__user">
+            <a class="shot__user-link" href="">
+              <img class="shot__avatar" src="/img/avatars/keith-david-young.jpg" alt="Keith Davis Young avatar">
+              <span class="shot__username">Keith Davis Young</span>
+            </a>
+          </div>
+          <div class="shot__info">
+            <a class="shot__info-item" href="#" aria-label="Shot likes">
+              <svg class="heart-icon" width="12" height="12" aria-hidden="true">
+                <use xlink:href="#heart"></use>
+              </svg>
+              10
+            </a>
+            <a class="shot__info-item" href="#" aria-label="Shot views">
+              <svg class="eye-icon" width="12" height="12" aria-hidden="true">
+                <use xlink:href="#eye"></use>
+              </svg>
+              100
+            </a>
+            <a class="shot__info-item" href="#" aria-label="Shot comments">
+              <svg class="chat-icon" width="12" height="12" aria-hidden="true">
+                <use xlink:href="#chat"></use>
+              </svg>
+              10
+            </a>
+          </div>
+        </article>
+        <article class="shot">
+          <div class="shot__content-wrapper">
+            <a class="shot__content" href="#" rel="bookmark">
+              <picture>
+                <source srcset="/img/shots/spicy_boys.jpg" media="(min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+                <source srcset="/img/shots/spicy_boys_1x.jpg">
+                <img src="/img/shots/spicy_boys_1x.jpg" alt="Spicy Boys">
+              </picture>
+              <span class="shot__overlay">
+                <strong class="shot__title">Spicy Boys</strong>
+                <span class="shot__description">But I must explain to you how all this mistaken idea of denouncing</span>
+
+                <time class="shot__date" datetime="2019-01-25">January 25, 2019</time>
+              </span>
+            </a>
+          </div>
+          <div class="shot__user">
+            <a class="shot__user-link" href="">
+              <img class="shot__avatar" src="/img/avatars/keith-david-young.jpg" alt="Keith Davis Young avatar">
+              <span class="shot__username">Keith Davis Young</span>
+            </a>
+          </div>
+          <div class="shot__info">
+            <a class="shot__info-item" href="#" aria-label="Shot likes">
+              <svg class="heart-icon" width="12" height="12" aria-hidden="true">
+                <use xlink:href="#heart"></use>
+              </svg>
+              10
+            </a>
+            <a class="shot__info-item" href="#" aria-label="Shot views">
+              <svg class="eye-icon" width="12" height="12" aria-hidden="true">
+                <use xlink:href="#eye"></use>
+              </svg>
+              100
+            </a>
+            <a class="shot__info-item" href="#" aria-label="Shot comments">
+              <svg class="chat-icon" width="12" height="12" aria-hidden="true">
+                <use xlink:href="#chat"></use>
+              </svg>
+              10
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
 
     <script src="/js/main.js"></script>
   </body>

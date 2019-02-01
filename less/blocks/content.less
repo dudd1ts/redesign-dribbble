@@ -9,10 +9,15 @@
   }
 }
 
-.search {
+.controls {
   display: flex;
+  align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  :not(:last-child) {
+    margin-right: 5px;
+  }
 }
 
 .search-input {
@@ -217,3 +222,4 @@
     }
   }
 }
+
