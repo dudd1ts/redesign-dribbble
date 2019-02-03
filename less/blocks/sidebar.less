@@ -22,19 +22,14 @@
 
 .sidebar {
   display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 10px 5px 0;
   background-color: @background-sidebar;
   transform: translate3d(0, 0, 0);
   .transition(transform);
   pointer-events: all;
-
-  @media (min-width: @screen-sm) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 
 .sidebar__close {
@@ -64,3 +59,251 @@
     fill: @color-charade;
   }
 }
+
+.sidebar-logo {
+  position: absolute;
+  left: calc(50% - 61px);
+}
+
+.sidebar__header {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  padding: 0 5px;
+  background-color: @background-sidebar-header;
+  height: 50px;
+
+  @media (min-width: @screen-sm) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.sidebar-controls {
+  display: flex;
+  flex-shrink: 0;
+  height: 60px;
+  padding: 10px 10px 10px 20px;
+
+  @media (min-width: @screen-sm) {
+    padding-right: 20px;
+  }
+}
+
+.sidebar-controls__item {
+  margin-right: 10px;
+}
+
+
+.add-shot {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: auto;
+  position: relative;
+  border-radius: 100%;
+  background: @brand-gradient;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: white;
+    width: 2px;
+    height: 12px;
+    top: calc(50% - 6px);
+    right: calc(50% - 1px);
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+}
+
+.messages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+
+  &--sidebar {
+    margin-right: 15px;
+  }
+}
+
+.messages__icon {
+  position: relative;
+
+  &--unread {
+    &::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 100%;
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      background: @brand-gradient;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      border-radius: 100%;
+      background-color: @color-white;
+    }
+  }
+}
+
+.notifications {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+}
+
+.notifications__icon {
+  position: relative;
+
+  &--unread {
+    &::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 100%;
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      background: @brand-gradient;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      border-radius: 100%;
+      background-color: @color-white;
+    }
+  }
+}
+
+.user {
+  display: flex;
+
+  &--sidebar {
+    margin-left: 20px;
+  }
+}
+
+.user__avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 100%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.user__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.user__username {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: @text-color;
+  white-space: nowrap;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media (min-width: @screen-sm) {
+    max-width: 200px;
+  }
+}
+
+.user__status {
+  flex-grow: 0;
+}
+
+.sidebar__content {
+  padding-left: 60px;
+  overflow-y: scroll;
+}
+
+.sidebar__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 15px 0 30px;
+}
+
+.sidebar__nav {
+  .reset-list();
+}
+
+.sidebar__nav-item {
+  margin-bottom: 10px;
+}
+
+.sidebar__nav-link {
+  display: inline-block;
+  color: @text-color-light;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+  padding-bottom: .5em;
+
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: @brand-color-light;
+    .transition(transform);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  &--active,
+  &:hover {
+    color: @text-color;
+
+    &::after {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.sidebar__more svg {
+  fill: @text-color-light;
+
+  &:hover {
+    fill: @text-color;
+  }
+}
+
+

@@ -1,8 +1,8 @@
 // Common styles of the project
 
 *,
-*:before,
-*:before {
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
@@ -14,6 +14,12 @@ html {
   height: 100%;
 }
 
+a,
+label {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
 .page {
   display: flex;
   height: 100%;
@@ -22,6 +28,28 @@ html {
   font-family: @font-family;
   line-height: 1.2;
 }
+
+.sidebar-opened {
+  overflow: hidden!important;
+}
+
+.status-label {
+  height: 15px;
+  padding: 0 6px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 600;
+  color: @color-white;
+
+  &--pro {
+    background-image: @brand-gradient;
+  }
+}
+
+
 
 
 
